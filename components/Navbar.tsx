@@ -1,4 +1,3 @@
-import { logout } from "@/actions/auth";
 import { auth } from "@/auth";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,10 +12,10 @@ const Navbar = async() => {
                 Home
             </Link>
 
-            {/* <div className="flex items-center gap-x-5">
+            <div className="flex items-center gap-x-5">
                 <Link href="/middleware">Middleware</Link>
                 <Link href="/server">Server</Link>
-            </div> */}
+            </div>
 
             <div className="flex items-center gap-x-5">
                 {session?.user ? 
